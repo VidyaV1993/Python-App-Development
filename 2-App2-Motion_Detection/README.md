@@ -1,6 +1,8 @@
 
-## App 1: Webmapping with Python
+## App 2: Motion Detection using WebCam
 
-This is an interactive mapping with 2 layers - Volcanoes and Population
-* Volcano layer will display the volcanoes mentioned in the 'Volcanoes.txt' file with pop up window showing more details such as name, height etc.
-* Population layer classifies the map in to different colors based on the population count in that region based on the info from "world.json" file.
+* This app will detect objects in motion using the in built camera of the laptop.
+* The input video is recorded and the objects detected are highlighted in rectangle shape.
+* Four output frames such as Gray frame, Delta frame, Threshold frame and Color frame are displayed in separate windows.
+* The status of object detection is stored in a list using which the timestamp information when an object entered/exited the camera coverage area is recorded in an excel file. 
+* Example excel file named "Times.csv" is present in this folder where an object entered the frame 4 times.
