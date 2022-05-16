@@ -1,7 +1,7 @@
 
 ## App 2: Motion Detection using WebCam
 
-* This app will detect objects in motion using the in built camera of the laptop.
+* This app will detect objects in motion using the built-in camera of the laptop.
 * The input video is recorded and the objects detected are highlighted in rectangle shape.
 * Four output frames such as Gray frame, Delta frame, Threshold frame and Color frame are displayed in separate windows.
 * The status of object detection is stored in a list using which the timestamp information when an object entered/exited the camera coverage area is recorded in an excel file. 
