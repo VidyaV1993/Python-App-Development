@@ -4,7 +4,7 @@ import cv2, time, pandas
 first_frame = None                  # Variable initialized to None
 status_list = [None, None]          # List to store the object detection status
 times = []                          # List to store the date time info
-video=cv2.VideoCapture(1)           # 1 means default camera is used for video capture
+video=cv2.VideoCapture(0)           # 0 means default camera is used for video capture
 df = pandas.DataFrame(columns=["Start", "End"]) # Data Frame to store the timestamp info of object detection
 
 while True:
@@ -32,6 +32,7 @@ while True:
 
     # Record the current timestamp when a change in object detection status occurs
     status_list.append(status)
+    status_list=status_list[-2:]
     if status_list[-1]==1 and status_list[-2]==0:
         times.append(datetime.now())
     if status_list[-1]==0 and status_list[-2]==1:
